@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #0d1310;
+        }
+
+        header {
+            width: 100%;
+            background-image: url(assets/img/Gemini_Generated_Image_s9bx4es9bx4es9bx.jpg);
+            margin: 0px;
+        }
+
+        .judul {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            border: 2px solid;
+            border-radius: 8px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            align-content: center;
+            background-color: #057045;
+            color: white
+        }
+
+        .teks-judul {
+            color: white
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 15px 0;
+            border: 3px solid #0d1310;
+            background-color: #0C3226;
+        }
+
+        nav a {
+            color: white;
+        }
+
+        main {
+            border: 2px solid #4d9c71;
+            border-radius: 8px;
+            margin: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            background-color: #102319;
+        }
+
+        .judul-inti {
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: #0C3226;
+        }
+
+        .inti {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            gap: 20px;
+            color: white;
+        }
+
+        .foto-profil img {
+            border: 3px solid #4d9c71;
+            border-radius: 100px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .biodata {
+            align-content: center;
+            text-align: left;
+        }
+
+        .biodata-inti {
+            padding-bottom: 10px;
+        }
+
+        article {
+            margin: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            border: 2px solid #4d9c71;
+            border-radius: 8px;
+            background-color: #102319;
+
+        }
+
+        section {
+            padding: 15px;
+            color: white;
+        }
+
+        .judul-paragraf {
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: #0C3226;
+        }
+
+        .multimedia {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .foto-video {
+            padding-left: 90px;
+            padding-right: 90px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .koleksi-foto {
+            margin: 10px;
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #4d9c71;
+            border-radius: 8px;
+            background-color: #102319;
+        }
+
+        .judul-foto {
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: #0C3226;
+        }
+
+        .foto-ku {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 30px;
+            gap: 20px;
+        }
+
+        .foto-ku img {
+            width: 100%;
+            height: 100%;
+            border: 3px solid #4d9c71;
+            border-radius: 8px;
+
+        }
+
+        .Video {
+            margin: 10px;
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #4d9c71;
+            border-radius: 8px;
+            background-color: #102319;
+        }
+
+        .judul-video {
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: #0C3226;
+        }
+
+        .video-ku {
+            padding: 30px;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            border: 3px solid #4d9c71;
+            border-radius: 8px;
+            aspect-ratio: 1 / 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .link{
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+
+        .link-download {
+            margin: 10px;
+            width: auto;
+            height: auto;
+            border: 2px solid #4d9c71;
+            border-radius: 8px;
+            background-color: #102319;
+        }
+
+        .judul-link {
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: #163f2e;
+        }
+
+        .list-link {
+            background-color: #071811;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+            padding: 15px 0;
+        }
+
+        footer {
+            width: 100%;
+            background-image: url(assets/img/Gemini_Generated_Image_s9bx4es9bx4es9bx.jpg);
+            margin: 0px;
+        }
+
+        .footer {
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="judul">
+                <div class="logo">MKF</div>
+                <div class="teks-judul">
+                    <h2>Khairul Profile</h2>
+                    <p>Informatics Engineering Student</p>
+                </div>
+            </div>
+            <hr color="#4d9c71" size="5">
+        </header>
+        <nav>
+            <a href="#biodata">biodata</a>
+            <a href="#about">tentang saya</a>
+            <a href="#content">konten</a>
+            <a href="#link">download</a>
+        </nav>
+        <hr color="#4d9c71" size="3">
+        <main>
+            <div class="judul-inti">
+                <h4>Biodata</h4>
+            </div>
+            <hr color="#4d9c71">
+            <div class="inti">
+                <div class="foto-profil">
+                    <img src="assets/img/foto_3_1x1.png" alt="Foto Profile">
+                </div>
+                <div class="biodata" id="biodata">
+                    <div class="biodata-inti">
+                        <h4>Muhammad Khairul Fadilah</h4>
+                        <p>Student of STT Terpadu Nurul Fikri</p>
+                    </div>
+                    <div class="biodata-lengkap">
+                        <table>
+                            <tr>
+                                <th>NIM</th>
+                                <td>: 0110226104</td>
+                            </tr>
+                            <tr>
+                                <th>Major</th>
+                                <td>: Informatics Engineering</td>
+                            </tr>
+                            <tr>
+                                <th>class</th>
+                                <td>: TI-01</td>
+                            </tr>
+                            <tr>
+                                <th>Address</th>
+                                <td>: Cibinong, Kabupaten Bogor</td>
+                            </tr>
+                            <tr>
+                                <th>No.Telp</th>
+                                <td>: 085779865135</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <article>
+            <div class="judul-paragraf" id="about">
+                <h3>Tentang saya</h3>
+            </div>
+            <hr color=#4d9c71>
+            <section> Saya adalah seorang mahasiswa di STT Terpadu Nurul Fikri, dan seorang mahasiswa yang adaptif dan
+                berdedikasi tinggi di bidang ilmu komputer dan teknik informatika. Minat saya tertuju pada bidang
+                cybersecurity dan basis data, oleh karena itu saya menyukai mata kuliah sistem operasi dan dasar-dasar
+                pemrograman</section>
+            <section> Di STT terpadu Nurul Fikri saya belajar banyak tentang teknologi, karena itu saya selalu
+                memperhatikan dan mempelajari setiap tugas yang dikerjakan. Walaupun saya adalah seorang mahasiswa
+                lintas jurusan dan belum memiliki banyak pengalaman di bidang ini akan tetapi saya tetap berusaha untuk
+                mengerti.</section>
+        </article>
+        <aside>
+            <div class="Multimedia" id="content">
+                <div class="foto-video">
+                    <div class="koleksi-foto">
+                        <h3 class="judul-foto">koleksi foto</h3>
+                        <hr color="#4d9c71">
+                        <div class="foto-ku">
+                            <img src="assets/img/download (4).jpg" alt="">
+                            <img src="assets/img/download (5).jpg" alt="">
+                            <img src="assets/img/download (6).jpg" alt="">
+                            <img src="assets/img/download (7).jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="Video">
+                        <h3 class="judul-video">Video</h3>
+                        <hr color="#4d9c71">
+                        <div class="video-ku">
+                            <video width="100%" controls>
+                                <source src="assets/img/video1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="link" id="link">
+                    <div class="link-download">
+                        <h3 class="judul-link">Link</h3>
+                        <hr color="#4d9c71">
+                        <div class="list-link">
+                            <a href="video1.mp4" download>Video</a>
+                            <a href="download (4).jpg" download>foto-1</a>
+                            <a href="download (5).jpg" download="">foto-2</a>
+                            <a href="download (6).jpg" download>foto-3</a>
+                            <a href="download (7).jpg" download>foto-4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <hr color="#4d9c71" size="5">
+        <footer>
+            <div class="footer">
+                <h2>@khrl_fdlh</h2>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
